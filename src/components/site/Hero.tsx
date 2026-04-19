@@ -41,12 +41,10 @@ export function Hero() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(180deg, rgba(5,13,26,0.25) 0%, rgba(7,20,40,0.15) 50%, rgba(5,13,26,0.75) 100%)",
-          backdropFilter: "blur(2px) saturate(115%)",
-          WebkitBackdropFilter: "blur(2px) saturate(115%)",
+            "linear-gradient(180deg, rgba(5,13,26,0.12) 0%, rgba(7,20,40,0.08) 42%, rgba(5,13,26,0.48) 100%)",
         }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sky/5 via-transparent to-electric/5" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sky/3 via-transparent to-electric/4" />
 
       {/* Floating particles */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -84,7 +82,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] mb-6 max-w-5xl mx-auto"
+          className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] mb-6 max-w-5xl mx-auto drop-shadow-[0_8px_28px_rgba(5,13,26,0.45)]"
         >
           Energia Solar de <span className="text-gradient-sky">Alta Performance</span> para Sua Casa e Empresa
         </motion.h1>
@@ -93,7 +91,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
+          className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 drop-shadow-[0_6px_18px_rgba(5,13,26,0.35)]"
         >
           Equipamentos premium com instalação e suporte especializado em Cabo Frio e região.
         </motion.p>
