@@ -41,12 +41,12 @@ export function Hero() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(180deg, rgba(5,13,26,0.55) 0%, rgba(7,20,40,0.45) 50%, rgba(5,13,26,0.95) 100%)",
-          backdropFilter: "blur(8px) saturate(120%)",
-          WebkitBackdropFilter: "blur(8px) saturate(120%)",
+            "linear-gradient(180deg, rgba(5,13,26,0.25) 0%, rgba(7,20,40,0.15) 50%, rgba(5,13,26,0.75) 100%)",
+          backdropFilter: "blur(2px) saturate(115%)",
+          WebkitBackdropFilter: "blur(2px) saturate(115%)",
         }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sky/10 via-transparent to-electric/10" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sky/5 via-transparent to-electric/5" />
 
       {/* Floating particles */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
