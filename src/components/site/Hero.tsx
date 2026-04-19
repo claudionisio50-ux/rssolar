@@ -1,20 +1,52 @@
-import { motion } from "framer-motion";
-import heroBg from "@/assets/hero-bg.jpg";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
+import heroSlide1 from "@/assets/hero-slide-1.jpg";
+import heroSlide2 from "@/assets/hero-slide-2.jpg";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const WHATSAPP = "https://wa.me/5521964913395";
 
 const particles = Array.from({ length: 24 });
+const slides = [heroSlide1, heroSlide2];
 
 export function Hero() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((i) => (i + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background image */}
+      {/* Background slideshow */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <AnimatePresence mode="sync">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 1.08 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.02 }}
+            transition={{ opacity: { duration: 1.6, ease: "easeInOut" }, scale: { duration: 7, ease: "easeOut" } }}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${slides[index]})` }}
+          />
+        </AnimatePresence>
+      </div>
+
+      {/* Glass overlay */}
       <div
-        className="absolute inset-0 -z-10 bg-cover bg-center opacity-60"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        className="absolute inset-0 -z-10"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(5,13,26,0.55) 0%, rgba(7,20,40,0.45) 50%, rgba(5,13,26,0.95) 100%)",
+          backdropFilter: "blur(8px) saturate(120%)",
+          WebkitBackdropFilter: "blur(8px) saturate(120%)",
+        }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-[#050d1a]/70 via-[#050d1a]/40 to-[#050d1a]" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sky/10 via-transparent to-electric/10" />
 
       {/* Floating particles */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
