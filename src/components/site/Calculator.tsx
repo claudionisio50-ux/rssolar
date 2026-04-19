@@ -55,7 +55,7 @@ export function Calculator() {
   }, [bill, stateUf]);
 
   const waLink = `https://wa.me/5521964913395?text=${encodeURIComponent(
-    `Olá! Calculei uma economia de ${fmt(result.monthlySavings)}/mês com energia solar (${propertyType}, ${stateUf}, conta atual ${fmt(bill)}). Pode me enviar um orçamento?`,
+    `Olá! Calculei uma economia de ${fmt(result.monthlySavings)}/mês. Quero saber mais sobre os equipamentos!`,
   )}`;
 
   return (
@@ -73,7 +73,7 @@ export function Calculator() {
             Calcule Sua <span className="text-gradient-sky">Economia Solar</span>
           </h2>
           <p className="text-muted-foreground">
-            Descubra quanto você pode economizar com um sistema fotovoltaico próprio.
+            Descubra quanto você pode economizar com equipamentos fotovoltaicos próprios.
           </p>
         </motion.div>
 
@@ -176,11 +176,10 @@ export function Calculator() {
               rel="noopener noreferrer"
               className="btn-hero mt-8 w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold"
             >
-              <WhatsAppIcon className="h-5 w-5" />
-              Quero esse projeto!
+              Quero os equipamentos para esse sistema!
             </a>
             <p className="text-[10px] text-muted-foreground mt-4 leading-relaxed">
-              * Estimativa baseada em irradiação solar média do estado, tarifa de R$ 0,75/kWh e 90% de compensação. Valores finais variam conforme projeto técnico.
+              * Estimativa baseada em irradiação solar média do estado, tarifa de R$ 0,75/kWh e 90% de compensação. Valores finais variam conforme equipamentos selecionados.
             </p>
           </div>
         </motion.div>
