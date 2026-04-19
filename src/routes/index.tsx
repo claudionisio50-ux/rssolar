@@ -1,26 +1,54 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Header } from "@/components/site/Header";
+import { Hero } from "@/components/site/Hero";
+import { Products } from "@/components/site/Products";
+import { Calculator } from "@/components/site/Calculator";
+import { Testimonials } from "@/components/site/Testimonials";
+import { WhyUs } from "@/components/site/WhyUs";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
+import { SectionDivider } from "@/components/site/SectionDivider";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "RS Painel Solar — Energia Solar Premium em Cabo Frio, RJ" },
+      {
+        name: "description",
+        content:
+          "Equipamentos solares de alta performance, aquecedores e filtros para piscina em Cabo Frio e região. Projeto, instalação e suporte especializado.",
+      },
+      { property: "og:title", content: "RS Painel Solar — Energia Solar Premium em Cabo Frio" },
+      {
+        property: "og:description",
+        content:
+          "Sistemas fotovoltaicos, aquecedores e filtros para piscina. Economize até 95% na conta de luz com tecnologia solar premium.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
+function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen overflow-x-hidden">
+      <Header />
+      <main>
+        <Hero />
+        <SectionDivider />
+        <Products />
+        <SectionDivider />
+        <Calculator />
+        <SectionDivider />
+        <Testimonials />
+        <SectionDivider />
+        <WhyUs />
+        <SectionDivider />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
 }
