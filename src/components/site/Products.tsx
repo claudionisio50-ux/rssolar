@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import poolHeater from "@/assets/pool-heater.jpg";
 import poolFilter from "@/assets/pool-filter.jpg";
 import solarPanels from "@/assets/solar-panels.jpg";
-import { WhatsAppIcon } from "./WhatsAppIcon";
+import { ShoppingCart } from "lucide-react";
 
-const wa = (msg: string) =>
+const waSolar = (msg: string) =>
   `https://wa.me/5521964913395?text=${encodeURIComponent(msg)}`;
 
 const products = [
@@ -13,24 +13,27 @@ const products = [
     title: "Aquecedor Solar de Piscina",
     desc: "Mantenha sua piscina na temperatura ideal o ano todo com tecnologia solar de alta eficiência. Economia de até 90% em relação ao aquecedor elétrico.",
     badges: ["Eficiência 95%", "Vida útil 25 anos", "Garantia 5 anos"],
-    msg: "Olá! Tenho interesse no Aquecedor Solar de Piscina.",
-    cta: "Quero um Orçamento",
+    cta: "Comprar no Mercado Livre",
+    ctaLink: "https://mercadolivre.com.br",
+    isMercadoLivre: true,
   },
   {
     img: poolFilter,
     title: "Filtro de Alta Performance para Piscina",
     desc: "Filtragem superior para uma piscina sempre limpa e cristalina. Sistema de filtragem de alta vazão com durabilidade comprovada.",
     badges: ["Alta Vazão", "Fácil Manutenção", "Resistente UV"],
-    msg: "Olá! Tenho interesse no Filtro para Piscina.",
-    cta: "Quero um Orçamento",
+    cta: "Comprar no Mercado Livre",
+    ctaLink: "https://mercadolivre.com.br",
+    isMercadoLivre: true,
   },
   {
     img: solarPanels,
-    title: "Sistemas de Energia Solar Fotovoltaica",
-    desc: "Painéis solares de alta eficiência para reduzir até 95% da sua conta de energia. Projeto personalizado, instalação profissional e monitoramento remoto.",
-    badges: ["Até 95% de economia", "Painéis Tier 1", "Monitoramento 24h"],
-    msg: "Olá! Gostaria de um projeto de energia solar.",
-    cta: "Solicitar Projeto Solar",
+    title: "Equipamentos de Energia Solar Fotovoltaica",
+    desc: "Painéis solares, inversores e componentes de alta eficiência para montar seu próprio sistema. Equipamentos Tier 1 com garantia de fabrica.",
+    badges: ["Painéis Tier 1", "Inversores certificados", "Garantia fabricante"],
+    cta: "Quero os Equipamentos",
+    ctaLink: waSolar("Olá! Tenho interesse nos equipamentos de energia solar. Pode me passar mais informações?"),
+    isMercadoLivre: false,
   },
 ];
 
@@ -89,15 +92,27 @@ export function Products() {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={wa(p.msg)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-outline-glow inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full font-medium text-sm"
-                >
-                  <WhatsAppIcon className="h-4 w-4" />
-                  {p.cta}
-                </a>
+                {p.isMercadoLivre ? (
+                  <a
+                    href={p.ctaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full font-medium text-sm transition-all hover:scale-105"
+                    style={{ backgroundColor: "#FFE600", color: "#333" }}
+                  >
+                    <ShoppingCart className="h-4 w-4" />
+                    {p.cta}
+                  </a>
+                ) : (
+                  <a
+                    href={p.ctaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-outline-glow inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full font-medium text-sm"
+                  >
+                    {p.cta}
+                  </a>
+                )}
               </div>
             </motion.article>
           ))}
