@@ -142,10 +142,10 @@ export function Calculator() {
                 <select
                   value={stateUf}
                   onChange={(e) => setStateUf(e.target.value)}
-                  className="w-full px-4 py-3 rounded-xl bg-midnight/60 border border-sky/30 text-foreground focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30 transition"
+                  className="w-full px-4 py-3 rounded-xl bg-white border border-sky/40 text-foreground focus:border-sky focus:outline-none focus:ring-2 focus:ring-sky/30 transition"
                 >
                   {STATES.map((s) => (
-                    <option key={s.uf} value={s.uf} className="bg-[#071428]">
+                    <option key={s.uf} value={s.uf} className="bg-white">
                       {s.name} ({s.uf})
                     </option>
                   ))}

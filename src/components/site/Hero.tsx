@@ -41,10 +41,10 @@ export function Hero() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(180deg, rgba(5,13,26,0.12) 0%, rgba(7,20,40,0.08) 42%, rgba(5,13,26,0.48) 100%)",
+            "linear-gradient(180deg, rgba(255,255,255,0.55) 0%, rgba(240,247,255,0.45) 50%, rgba(255,255,255,0.65) 100%)",
         }}
       />
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sky/3 via-transparent to-electric/4" />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-sky/5 via-transparent to-electric/5" />
 
       {/* Floating particles */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
