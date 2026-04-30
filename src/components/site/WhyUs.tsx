@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Users, MapPin, Award, Wrench, ShieldCheck, Heart } from "lucide-react";
+import { Users, MapPin, Award, ShieldCheck, Heart } from "lucide-react";
 
 const items = [
   { icon: Users, title: "Mais de 32 clientes satisfeitos", desc: "Histórico comprovado de excelência." },
