@@ -200,3 +200,14 @@
     box-shadow: 0 10px 24px rgba(255, 230, 0, 0.55);
   }
 }
+
+/* Hero Ken Burns slow zoom — sharp, no blur */
+@keyframes hero-kenburns {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+.hero-kenburns {
+  filter: none !important;
+  will-change: transform;
+  animation: hero-kenburns 12s ease-in-out infinite alternate;
+}
