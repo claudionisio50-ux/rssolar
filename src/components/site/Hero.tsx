@@ -27,7 +27,7 @@ export function Hero() {
         className="absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(160deg, rgba(2,30,80,0.55) 0%, rgba(14,165,233,0.25) 100%)",
+            "linear-gradient(160deg, rgba(2,30,80,0.70) 0%, rgba(14,165,233,0.30) 100%)",
         }}
       />
 
@@ -57,17 +57,25 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full frost mb-8 text-xs md:text-sm text-white"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-8 text-white"
+          style={{
+            background: "rgba(255,255,255,0.15)",
+            backdropFilter: "blur(10px)",
+            WebkitBackdropFilter: "blur(10px)",
+            border: "1px solid rgba(255,255,255,0.3)",
+            fontSize: "13px",
+            fontFamily: "'DM Sans', 'Inter', sans-serif",
+          }}
         >
-          <span className="text-yellow-400">★</span>
-          <span>5.0 — 32 avaliações no Google</span>
+          <span style={{ color: "#FFD700" }}>★</span>
+          <span style={{ color: "#ffffff" }}>5.0 — 32 avaliações no Google</span>
         </motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] mb-6 max-w-5xl mx-auto text-white drop-shadow-[0_8px_28px_rgba(5,13,26,0.6)]"
+          className="font-display font-bold leading-[1.05] mb-6 max-w-5xl mx-auto text-white drop-shadow-[0_8px_28px_rgba(5,13,26,0.6)] text-4xl md:text-5xl lg:text-[58px]"
         >
           Energia Solar de <span className="text-gradient-sky">Alta Performance</span> para Sua Casa e Empresa
         </motion.h1>
@@ -105,8 +113,65 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70 text-xs animate-bounce">
-        ↓ role para descobrir
+      {/* Scroll indicator */}
+      <div className="absolute bottom-28 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 z-10 pointer-events-none">
+        <span
+          className="text-white animate-bounce"
+          style={{
+            fontSize: "10px",
+            letterSpacing: "0.25em",
+            textTransform: "uppercase",
+            fontFamily: "'DM Sans', 'Inter', sans-serif",
+          }}
+        >
+          ↓ Role para descobrir
+        </span>
+      </div>
+
+      {/* Bottom frosted stat bar */}
+      <div
+        className="absolute bottom-0 left-0 right-0 z-10"
+        style={{
+          backdropFilter: "blur(12px)",
+          WebkitBackdropFilter: "blur(12px)",
+          background: "rgba(255,255,255,0.1)",
+          borderTop: "1px solid rgba(255,255,255,0.15)",
+        }}
+      >
+        <div className="container mx-auto px-6 py-5">
+          <div className="grid grid-cols-3 gap-4">
+            {[
+              { value: "32+", label: "Clientes Satisfeitos" },
+              { value: "Cabo Frio e Região", label: "Atendimento Local" },
+              { value: "Tier 1", label: "Equipamentos Premium" },
+            ].map((s, i) => (
+              <div
+                key={s.label}
+                className={`flex flex-col items-center text-center px-2 ${
+                  i > 0 ? "border-l border-white/25" : ""
+                }`}
+              >
+                <span
+                  className="font-bold text-base md:text-xl"
+                  style={{ color: "#38bdf8" }}
+                >
+                  {s.value}
+                </span>
+                <span
+                  className="text-white mt-1"
+                  style={{
+                    fontSize: "11px",
+                    letterSpacing: "0.18em",
+                    textTransform: "uppercase",
+                    fontFamily: "'DM Sans', 'Inter', sans-serif",
+                  }}
+                >
+                  {s.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
