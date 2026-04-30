@@ -65,7 +65,7 @@ export function Products() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 0.7, delay: i * 0.15 }}
-              className="frost glow-card rounded-2xl overflow-hidden flex flex-col"
+              className="frost glow-card product-card rounded-2xl overflow-hidden flex flex-col group"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
@@ -74,11 +74,13 @@ export function Products() {
                   loading="lazy"
                   width={1280}
                   height={896}
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                 />
               </div>
               <div className="p-7 flex flex-col flex-1">
-                <h3 className="font-display text-2xl font-semibold mb-3">{p.title}</h3>
+                <h3 className="font-display text-2xl font-semibold mb-3 transition-colors duration-300 group-hover:text-[#0369a1]">
+                  {p.title}
+                </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed mb-5 flex-1">
                   {p.desc}
                 </p>
@@ -86,7 +88,7 @@ export function Products() {
                   {p.badges.map((b) => (
                     <span
                       key={b}
-                      className="text-xs px-3 py-1 rounded-full border border-sky/30 text-sky bg-sky/5"
+                      className="text-xs px-3 py-1 rounded-full border border-sky/30 text-sky bg-sky/5 transition-all duration-300 group-hover:bg-sky/15 group-hover:border-sky/60"
                     >
                       {b}
                     </span>
@@ -97,10 +99,10 @@ export function Products() {
                     href={p.ctaLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full font-medium text-sm transition-all hover:scale-105"
+                    className="btn-mercadolivre inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full font-medium text-sm"
                     style={{ backgroundColor: "#FFE600", color: "#333" }}
                   >
-                    <ShoppingCart className="h-4 w-4" />
+                    <ShoppingCart className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:scale-110" />
                     {p.cta}
                   </a>
                 ) : (
