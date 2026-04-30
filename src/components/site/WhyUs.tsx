@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
-import { Users, MapPin, Award, Wrench, ShieldCheck, Heart } from "lucide-react";
+import { Users, MapPin, Award, ShieldCheck, Heart } from "lucide-react";
 
 const items = [
   { icon: Users, title: "Mais de 32 clientes satisfeitos", desc: "Histórico comprovado de excelência." },
   { icon: MapPin, title: "Atendimento em Cabo Frio e região", desc: "Equipe local, resposta rápida." },
   { icon: Award, title: "Equipamentos de alta qualidade", desc: "Marcas Tier 1 e tecnologia premium." },
-  { icon: Wrench, title: "Projeto e instalação profissional", desc: "Engenharia dedicada para cada cliente." },
   { icon: ShieldCheck, title: "Suporte pós-venda garantido", desc: "Acompanhamento técnico contínuo." },
   { icon: Heart, title: "Empresa inclusiva e acolhedora", desc: "Atendimento humano e respeitoso." },
 ];
