@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
-const WHATSAPP = "https://wa.me/5521964913395";
+const WHATSAPP = "https://wa.me/5584996792071";
 
 const particles = Array.from({ length: 24 });
 const HERO_IMAGE =

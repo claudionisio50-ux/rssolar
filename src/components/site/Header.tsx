@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import logo from "@/assets/logo.png";
 
-const WHATSAPP = "https://wa.me/5521964913395";
+const WHATSAPP = "https://wa.me/5584996792071";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
