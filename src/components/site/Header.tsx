@@ -22,9 +22,9 @@ export function Header() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a href="#hero" className="flex items-center gap-3">
-          <img src={logo} alt="RS Solar — Consultoria e Soluções em Energia" className="h-10 md:h-12 w-auto rounded-full transition-transform duration-300 hover:scale-105" />
+          <img src={logo} alt="Planeta Renováveis — Fontes de Energia" className="h-10 md:h-12 w-auto rounded-full transition-transform duration-300 hover:scale-105" />
           <span className="font-display text-xl md:text-2xl font-semibold text-gradient-sky hidden sm:inline">
-            RS Painel Solar
+            Planeta Renováveis
           </span>
         </a>
         <a
