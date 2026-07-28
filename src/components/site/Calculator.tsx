@@ -54,7 +54,7 @@ export function Calculator() {
     };
   }, [bill, stateUf]);
 
-  const waLink = `https://wa.me/5584998142458?text=${encodeURIComponent(
+  const waLink = `https://wa.me/5521980234309?text=${encodeURIComponent(
     `Olá! Calculei uma economia de ${fmt(result.monthlySavings)}/mês. Quero saber mais sobre os equipamentos!`,
   )}`;
 
