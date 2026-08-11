@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MapPin, Clock, Phone } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
-const WHATSAPP = "https://wa.me/558296686750";
+const WHATSAPP = "https://wa.me/5521980234309";
 const MAPS = "https://www.google.com/maps/search/?api=1&query=Rua+Fran%C3%A7a+609+Jardim+Cai%C3%A7ara+Cabo+Frio+RJ";
 
 export function Contact() {

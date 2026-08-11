@@ -5,7 +5,7 @@ import solarPanels from "@/assets/solar-panels.jpg";
 import { ShoppingCart } from "lucide-react";
 
 const waSolar = (msg: string) =>
-  `https://wa.me/558296686750?text=${encodeURIComponent(msg)}`;
+  `https://wa.me/5521980234309?text=${encodeURIComponent(msg)}`;
 
 
 const products = [
