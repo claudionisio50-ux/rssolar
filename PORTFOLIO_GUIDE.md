@@ -16,3 +16,9 @@ O site foi preparado para exibir apenas instalações **reais** e autorizadas. Q
 Para cada case, registre a cidade, o tipo de imóvel, a potência instalada e uma foto com autorização de uso. Evite expor nome, endereço completo, fatura de energia ou qualquer outro dado pessoal do cliente.
 
 Depois de adicionar pelo menos um item, a seção **Projetos reais** será exibida automaticamente na página inicial. Para fotos recebidas por WhatsApp, mantenha o arquivo em boa resolução e prefira imagens horizontais ou com enquadramento amplo da instalação.
+
+## Prévia de layout atual
+
+Neste momento, o arquivo contém três cards de exemplo (Residencial, Comercial e Rural) com imagens placeholder. Eles aparecem com etiquetas e um aviso de **Modo de prévia ativo**, por isso não devem ser interpretados como instalações da empresa.
+
+Antes de publicar o portfólio comercial, substitua os três exemplos por instalações autorizadas e altere `portfolioPreviewMode` para `false`.
