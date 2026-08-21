@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Building2, Home, Sprout } from "lucide-react";
 import solarPanels from "@/assets/solar-panels.jpg";
 
-const waSolar = (msg: string) => `https://wa.me/5521980234309?text=${encodeURIComponent(msg)}`;
+const waSolar = (msg: string) => `https://wa.me/5521980234909?text=${encodeURIComponent(msg)}`;
 
 const solutions = [
   {

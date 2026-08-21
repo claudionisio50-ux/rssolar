@@ -47,7 +47,7 @@ export function Calculator() {
     };
   }, [bill, stateUf]);
 
-  const waLink = `https://wa.me/5521980234309?text=${encodeURIComponent(
+  const waLink = `https://wa.me/5521980234909?text=${encodeURIComponent(
     [
       "Olá! Fiz uma simulação de energia solar pelo site.",
       `Nome: ${lead.name || "não informado"}`,
