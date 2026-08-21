@@ -39,9 +39,9 @@ export function Contact() {
               A última conta de luz e a cidade onde fica o imóvel.
             </InfoCard>
             <InfoCard icon={MapPin} title="Atendimento">
-              Rua França, 609 - Lj 01
+              Rua Brasil, 710
               <br />
-              Jardim Caiçara, Cabo Frio - RJ
+              São Cristovão, Cabo Frio - RJ
               <a
                 href={MAPS}
                 target="_blank"
