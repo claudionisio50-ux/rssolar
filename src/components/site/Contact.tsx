@@ -5,7 +5,7 @@ import { WhatsAppIcon } from "./WhatsAppIcon";
 const WHATSAPP =
   "https://wa.me/5521980234909?text=Olá!%20Quero%20enviar%20minha%20conta%20de%20luz%20para%20uma%20análise.";
 const MAPS =
-  "https://www.google.com/maps/search/?api=1&query=Rua+Fran%C3%A7a+609+Jardim+Cai%C3%A7ara+Cabo+Frio+RJ";
+  "https://www.google.com/maps/search/?api=1&query=Rua+Brasil+710+Sao+Cristovao+Cabo+Frio+RJ";
 
 export function Contact() {
   return (
@@ -39,9 +39,9 @@ export function Contact() {
               A última conta de luz e a cidade onde fica o imóvel.
             </InfoCard>
             <InfoCard icon={MapPin} title="Atendimento">
-              Rua França, 609 - Lj 01
+              Rua Brasil, 710
               <br />
-              Jardim Caiçara, Cabo Frio - RJ
+              São Cristovão, Cabo Frio - RJ
               <a
                 href={MAPS}
                 target="_blank"
