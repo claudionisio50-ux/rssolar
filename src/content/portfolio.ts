@@ -37,8 +37,8 @@ export const portfolioProjects: PortfolioProject[] = [
     city: "Região dos Lagos - RJ (exemplo)",
     propertyType: "Comercial",
     power: "18,2 kWp (exemplo)",
-    image: "/portfolio/comercial.webp",
-    alt: "Painéis solares instalados na cobertura de uma edificação comercial",
+    image: "/portfolio/comercial.jpg",
+    alt: "Técnico em instalação de painéis solares na cobertura de uma edificação comercial",
     isIllustrative: true,
   },
   {
