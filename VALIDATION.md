@@ -7,3 +7,5 @@ Foram verificados na página os blocos de soluções fotovoltaicas por perfil, a
 Na revisão em prévia, a estrutura e os textos são carregados corretamente. As capturas automáticas mostraram áreas temporariamente vazias enquanto animações de entrada baseadas em viewport estavam em execução; isso deve ser tratado para que os blocos permaneçam visíveis mesmo em condições de carregamento lento ou ferramentas de visualização automatizada.
 
 O simulador agora mantém o CTA de WhatsApp desabilitado e apresenta a mensagem “Informe nome e WhatsApp para continuar” até que os dois campos obrigatórios sejam preenchidos. A mensagem de simulação inclui o consumo, o tipo de imóvel, a cidade e a estimativa calculada.
+
+Na prévia atualizada, os três cards do portfólio estão vinculados às imagens fornecidas para Residencial, Comercial e Rural. O modo de prévia continua destacado por etiquetas nos cards e por um aviso que informa que cidades e potências são somente exemplos até a inserção dos dados reais.

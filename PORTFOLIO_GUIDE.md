@@ -19,6 +19,6 @@ Depois de adicionar pelo menos um item, a seção **Projetos reais** será exibi
 
 ## Prévia de layout atual
 
-Neste momento, o arquivo contém três cards de exemplo (Residencial, Comercial e Rural) com imagens placeholder. Eles aparecem com etiquetas e um aviso de **Modo de prévia ativo**, por isso não devem ser interpretados como instalações da empresa.
+Neste momento, o arquivo contém três cards de visualização (Residencial, Comercial e Rural) com fotos fornecidas para demonstrar o layout. Eles aparecem com etiquetas e um aviso de **Modo de prévia ativo**, por isso não devem ser interpretados como instalações da empresa.
 
 Antes de publicar o portfólio comercial, substitua os três exemplos por instalações autorizadas e altere `portfolioPreviewMode` para `false`.
