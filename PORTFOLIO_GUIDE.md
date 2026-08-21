@@ -1,24 +1,18 @@
-# Como preencher o portfólio RJ Solar
+# Vitrine de soluções RJ Solar
 
-O site foi preparado para exibir apenas instalações **reais** e autorizadas. Quando houver fotos disponíveis, inclua cada instalação em `src/content/portfolio.ts` usando este modelo:
+Este site-modelo apresenta soluções de energia solar por perfil de imóvel: Residencial, Comercial e Rural. A seção foi pensada para demonstrar como uma empresa do setor pode organizar sua oferta de forma clara, sem se apresentar como um portfólio de obras executadas.
+
+Os cards são definidos em `src/content/portfolio.ts` seguindo esta estrutura:
 
 ```ts
 {
-  title: "Residência em Cabo Frio",
-  city: "Cabo Frio - RJ",
+  title: "Soluções para residências",
   propertyType: "Residencial",
-  power: "6,6 kWp",
-  image: "/caminho-da-foto-real.jpg",
-  alt: "Instalação de painéis solares em residência de Cabo Frio",
+  audience: "Casas, apartamentos e condomínios",
+  focus: "Economia e geração no telhado",
+  image: "/caminho-da-imagem.jpg",
+  alt: "Solução de energia solar para uma residência",
 }
 ```
 
-Para cada case, registre a cidade, o tipo de imóvel, a potência instalada e uma foto com autorização de uso. Evite expor nome, endereço completo, fatura de energia ou qualquer outro dado pessoal do cliente.
-
-Depois de adicionar pelo menos um item, a seção **Projetos reais** será exibida automaticamente na página inicial. Para fotos recebidas por WhatsApp, mantenha o arquivo em boa resolução e prefira imagens horizontais ou com enquadramento amplo da instalação.
-
-## Prévia de layout atual
-
-Neste momento, o arquivo contém três cards de visualização (Residencial, Comercial e Rural) com fotos fornecidas para demonstrar o layout. Eles aparecem com etiquetas e um aviso de **Modo de prévia ativo**, por isso não devem ser interpretados como instalações da empresa.
-
-Antes de publicar o portfólio comercial, substitua os três exemplos por instalações autorizadas e altere `portfolioPreviewMode` para `false`.
+Use imagens com licença de uso adequada ou autorização do proprietário. Para transformar a seção em portfólio de instalações reais no futuro, inclua somente cidade, potência e fotos autorizadas de cada obra, sem expor dados pessoais de clientes.

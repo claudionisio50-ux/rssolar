@@ -1,53 +1,41 @@
-export type PortfolioProject = {
-  /** Título sem expor dados pessoais do cliente, por exemplo: "Residência em Cabo Frio". */
+export type SolarSolution = {
+  /** Título comercial da solução apresentada no site-modelo. */
   title: string;
-  /** Cidade e, se desejado, bairro da instalação. */
-  city: string;
-  /** Residencial, Comercial ou Rural. */
+  /** Perfil de imóvel atendido pela solução. */
   propertyType: string;
-  /** Potência instalada, por exemplo: "6,6 kWp". */
-  power: string;
-  /** Caminho ou URL da foto real autorizada pelo cliente. */
+  /** Tipos de público ou de imóvel para os quais a solução é indicada. */
+  audience: string;
+  /** Principal objetivo que a solução pode atender. */
+  focus: string;
+  /** Imagem ilustrativa da solução de energia solar. */
   image: string;
-  /** Texto acessível descrevendo a foto real. */
+  /** Texto acessível que descreve a imagem. */
   alt: string;
-  /** Quando verdadeiro, sinaliza que o card é apenas um modelo visual. */
-  isIllustrative?: boolean;
 };
 
-/**
- * Esta prévia está ativa somente para visualizar o layout. Antes de publicar o
- * portfólio comercial, substitua os itens por instalações reais e defina este
- * valor como false.
- */
-export const portfolioPreviewMode = true;
-
-export const portfolioProjects: PortfolioProject[] = [
+export const solarSolutions: SolarSolution[] = [
   {
-    title: "Residência — visual de portfólio",
-    city: "Cabo Frio - RJ (exemplo)",
+    title: "Soluções para residências",
     propertyType: "Residencial",
-    power: "6,6 kWp (exemplo)",
+    audience: "Casas, apartamentos e condomínios",
+    focus: "Economia e geração no telhado",
     image: "/portfolio/residencial.webp",
-    alt: "Painéis solares instalados sobre o telhado de uma residência",
-    isIllustrative: true,
+    alt: "Solução de energia solar para uma residência",
   },
   {
-    title: "Empresa — visual de portfólio",
-    city: "Região dos Lagos - RJ (exemplo)",
+    title: "Soluções para empresas",
     propertyType: "Comercial",
-    power: "18,2 kWp (exemplo)",
+    audience: "Lojas, empresas e galpões",
+    focus: "Mais previsibilidade de custos",
     image: "/portfolio/comercial.jpg",
-    alt: "Técnico em instalação de painéis solares na cobertura de uma edificação comercial",
-    isIllustrative: true,
+    alt: "Solução de energia solar para uma edificação comercial",
   },
   {
-    title: "Propriedade rural — visual de portfólio",
-    city: "Interior do RJ (exemplo)",
+    title: "Soluções para área rural",
     propertyType: "Rural",
-    power: "12,0 kWp (exemplo)",
+    audience: "Sítios, fazendas e propriedades rurais",
+    focus: "Autonomia para a operação",
     image: "/portfolio/rural.webp",
-    alt: "Painéis solares instalados em área rural",
-    isIllustrative: true,
+    alt: "Solução de energia solar para uma propriedade rural",
   },
 ];

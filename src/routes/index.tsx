@@ -4,7 +4,7 @@ import { Hero } from "@/components/site/Hero";
 import { Products } from "@/components/site/Products";
 import { Process } from "@/components/site/Process";
 import { Projects } from "@/components/site/Projects";
-import { portfolioProjects } from "@/content/portfolio";
+import { solarSolutions } from "@/content/portfolio";
 import { Calculator } from "@/components/site/Calculator";
 import { Testimonials } from "@/components/site/Testimonials";
 import { WhyUs } from "@/components/site/WhyUs";
@@ -44,7 +44,7 @@ function Index() {
         <Products />
         <SectionDivider />
         <Process />
-        {portfolioProjects.length > 0 && (
+        {solarSolutions.length > 0 && (
           <>
             <SectionDivider />
             <Projects />
