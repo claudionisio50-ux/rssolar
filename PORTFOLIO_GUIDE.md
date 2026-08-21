@@ -1,4 +1,4 @@
-# Como preencher o portfólio RS Painel Solar
+# Como preencher o portfólio RJ Solar
 
 O site foi preparado para exibir apenas instalações **reais** e autorizadas. Quando houver fotos disponíveis, inclua cada instalação em `src/content/portfolio.ts` usando este modelo:
 

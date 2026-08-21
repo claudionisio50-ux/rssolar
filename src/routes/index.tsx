@@ -15,13 +15,13 @@ import { SectionDivider } from "@/components/site/SectionDivider";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RS Painel Solar | Energia Solar em Cabo Frio e Região" },
+      { title: "RJ Solar | Energia Solar em Cabo Frio e Região" },
       {
         name: "description",
         content:
           "Simule sua economia com energia solar e receba uma análise personalizada para sua casa, empresa ou propriedade rural em Cabo Frio e região.",
       },
-      { property: "og:title", content: "RS Painel Solar | Simule sua economia" },
+      { property: "og:title", content: "RJ Solar | Simule sua economia" },
       {
         property: "og:description",
         content:

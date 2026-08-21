@@ -21,14 +21,14 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#hero" className="flex items-center gap-3" aria-label="RS Painel Solar - início">
+        <a href="#hero" className="flex items-center gap-3" aria-label="RJ Solar - início">
           <img
             src={logo}
-            alt="RS Painel Solar"
+            alt="RJ Solar"
             className="h-10 md:h-12 w-auto rounded-full transition-transform duration-300 hover:scale-105"
           />
           <span className="font-display text-xl md:text-2xl font-semibold text-gradient-sky hidden sm:inline">
-            RS Painel Solar
+            RJ Solar
           </span>
         </a>
         <a

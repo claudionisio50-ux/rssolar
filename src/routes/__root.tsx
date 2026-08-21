@@ -28,14 +28,14 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RS Painel Solar | Energia Solar em Cabo Frio" },
+      { title: "RJ Solar | Energia Solar em Cabo Frio" },
       {
         name: "description",
         content:
           "Energia solar sob medida para casas, empresas e propriedades rurais em Cabo Frio e região.",
       },
-      { name: "author", content: "RS Painel Solar" },
-      { property: "og:title", content: "RS Painel Solar | Simule sua economia" },
+      { name: "author", content: "RJ Solar" },
+      { property: "og:title", content: "RJ Solar | Simule sua economia" },
       {
         property: "og:description",
         content: "Envie sua conta de luz e receba uma análise personalizada de energia solar.",

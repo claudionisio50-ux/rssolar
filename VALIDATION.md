@@ -1,6 +1,6 @@
 # Validação visual da atualização
 
-A prévia pública carregou com a identidade RS Painel Solar unificada em cabeçalho, conteúdo e metadados. A primeira tela apresenta a nova proposta de valor, CTAs para simulação e WhatsApp e a paleta azul-marinho e dourada.
+A prévia pública carregou com a identidade RJ Solar unificada em cabeçalho, conteúdo e metadados. A primeira tela apresenta a nova proposta de valor, CTAs para simulação e WhatsApp e a paleta azul-marinho e dourada.
 
 Foram verificados na página os blocos de soluções fotovoltaicas por perfil, a nova jornada de quatro etapas, o simulador com campos de nome, WhatsApp e cidade, a seção de decisão sem depoimentos inventados e o CTA final de envio da conta de luz pelo WhatsApp.
 

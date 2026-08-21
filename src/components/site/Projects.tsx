@@ -21,7 +21,7 @@ export function Projects() {
           <p className="text-muted-foreground">
             {portfolioPreviewMode
               ? "Os cards abaixo são modelos de visualização. Troque as imagens e dados pelos projetos reais antes de publicar."
-              : "Instalações concluídas pela RS Painel Solar, apresentadas com informações objetivas de cada projeto."}
+              : "Instalações concluídas pela RJ Solar, apresentadas com informações objetivas de cada projeto."}
           </p>
         </div>
 
