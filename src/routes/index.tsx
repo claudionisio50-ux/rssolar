@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Products } from "@/components/site/Products";
+import { Process } from "@/components/site/Process";
+import { Projects } from "@/components/site/Projects";
 import { Calculator } from "@/components/site/Calculator";
 import { Testimonials } from "@/components/site/Testimonials";
 import { WhyUs } from "@/components/site/WhyUs";
@@ -12,17 +14,17 @@ import { SectionDivider } from "@/components/site/SectionDivider";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RS Painel Solar — Energia Solar Premium em Cabo Frio, RJ" },
+      { title: "RS Painel Solar | Energia Solar em Cabo Frio e Região" },
       {
         name: "description",
         content:
-          "Equipamentos solares de alta performance, aquecedores e filtros para piscina em Cabo Frio e região. Projeto, instalação e suporte especializado.",
+          "Simule sua economia com energia solar e receba uma análise personalizada para sua casa, empresa ou propriedade rural em Cabo Frio e região.",
       },
-      { property: "og:title", content: "RS Painel Solar — Energia Solar Premium em Cabo Frio" },
+      { property: "og:title", content: "RS Painel Solar | Simule sua economia" },
       {
         property: "og:description",
         content:
-          "Sistemas fotovoltaicos, aquecedores e filtros para piscina. Economize até 95% na conta de luz com tecnologia solar premium.",
+          "Energia solar sob medida para o seu imóvel. Envie sua conta de luz e receba uma análise personalizada.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -40,6 +42,9 @@ function Index() {
         <SectionDivider />
         <Products />
         <SectionDivider />
+        <Process />
+        <SectionDivider />
+        <Projects />
         <Calculator />
         <SectionDivider />
         <Testimonials />

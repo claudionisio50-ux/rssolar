@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import logo from "@/assets/logo.png";
 
-const WHATSAPP = "https://wa.me/5521980234309";
+const WHATSAPP = "https://wa.me/5521980234309?text=Olá!%20Quero%20falar%20sobre%20energia%20solar.";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,10 +21,14 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#hero" className="flex items-center gap-3">
-          <img src={logo} alt="Planeta Renováveis — Fontes de Energia" className="h-10 md:h-12 w-auto rounded-full transition-transform duration-300 hover:scale-105" />
+        <a href="#hero" className="flex items-center gap-3" aria-label="RS Painel Solar - início">
+          <img
+            src={logo}
+            alt="RS Painel Solar"
+            className="h-10 md:h-12 w-auto rounded-full transition-transform duration-300 hover:scale-105"
+          />
           <span className="font-display text-xl md:text-2xl font-semibold text-gradient-sky hidden sm:inline">
-            Planeta Renováveis
+            RS Painel Solar
           </span>
         </a>
         <a
@@ -34,7 +38,8 @@ export function Header() {
           className="btn-hero inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold animate-pulse-glow"
         >
           <WhatsAppIcon className="h-4 w-4" />
-          <span className="hidden sm:inline">WhatsApp</span>
+          <span className="hidden sm:inline">Falar com especialista</span>
+          <span className="sm:hidden">WhatsApp</span>
         </a>
       </div>
     </header>
