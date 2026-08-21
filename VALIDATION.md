@@ -9,3 +9,5 @@ Na revisão em prévia, a estrutura e os textos são carregados corretamente. As
 O simulador agora mantém o CTA de WhatsApp desabilitado e apresenta a mensagem “Informe nome e WhatsApp para continuar” até que os dois campos obrigatórios sejam preenchidos. A mensagem de simulação inclui o consumo, o tipo de imóvel, a cidade e a estimativa calculada.
 
 Na prévia atualizada, os três cards do portfólio estão vinculados às imagens fornecidas para Residencial, Comercial e Rural. O modo de prévia continua destacado por etiquetas nos cards e por um aviso que informa que cidades e potências são somente exemplos até a inserção dos dados reais.
+
+Em 21 de agosto de 2026, a prévia local foi conferida após a troca de marca: o cabeçalho passou a apresentar RJ Solar e o conteúdo do site permaneceu carregando normalmente.
