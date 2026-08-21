@@ -3,7 +3,7 @@ import { ArrowDownRight } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const WHATSAPP =
-  "https://wa.me/5521980234309?text=Olá!%20Quero%20simular%20a%20economia%20do%20meu%20imóvel.";
+  "https://wa.me/5521980234909?text=Olá!%20Quero%20simular%20a%20economia%20do%20meu%20imóvel.";
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1920&q=85";
 

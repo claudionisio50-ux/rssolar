@@ -3,7 +3,7 @@ import { FileText, MapPin, Phone } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const WHATSAPP =
-  "https://wa.me/5521980234309?text=Olá!%20Quero%20enviar%20minha%20conta%20de%20luz%20para%20uma%20análise.";
+  "https://wa.me/5521980234909?text=Olá!%20Quero%20enviar%20minha%20conta%20de%20luz%20para%20uma%20análise.";
 const MAPS =
   "https://www.google.com/maps/search/?api=1&query=Rua+Fran%C3%A7a+609+Jardim+Cai%C3%A7ara+Cabo+Frio+RJ";
 
@@ -52,7 +52,7 @@ export function Contact() {
               </a>
             </InfoCard>
             <InfoCard icon={Phone} title="WhatsApp">
-              (21) 96491-3395
+              (21) 98023-4909
               <a
                 href={WHATSAPP}
                 target="_blank"
