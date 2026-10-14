@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Building2, Home, Sprout } from "lucide-react";
 import solarPanels from "@/assets/solar-panels.jpg";
+import { whatsappLink } from "@/lib/whatsapp";
 
-const waSolar = (msg: string) => `https://wa.me/5521980234909?text=${encodeURIComponent(msg)}`;
+const waSolar = whatsappLink;
 
 const solutions = [
   {

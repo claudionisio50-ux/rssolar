@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import { FileText, Palette, Phone } from "lucide-react";
+import { FileText, Palette, Phone, type LucideIcon } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
+import { whatsappLink } from "@/lib/whatsapp";
 
-const WHATSAPP =
-  "https://wa.me/5521980234909?text=Olá!%20Quero%20enviar%20minha%20conta%20de%20luz%20para%20uma%20análise.";
+const WHATSAPP = whatsappLink("Olá! Quero enviar minha conta de luz para uma análise.");
 
 export function Contact() {
   return (
@@ -63,7 +63,7 @@ function InfoCard({
   title,
   children,
 }: {
-  icon: typeof MapPin;
+  icon: LucideIcon;
   title: string;
   children: React.ReactNode;
 }) {

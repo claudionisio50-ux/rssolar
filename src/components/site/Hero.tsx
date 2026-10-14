@@ -5,9 +5,11 @@ import solarPrimeLogo from "@/assets/solar-prime-logo.webp";
 import heroBg from "@/assets/hero-bg.jpg";
 import heroPanel from "@/assets/hero-slide-2.jpg";
 import { WhatsAppIcon } from "./WhatsAppIcon";
+import { whatsappLink } from "@/lib/whatsapp";
 
-const WHATSAPP =
-  "https://wa.me/5521980234909?text=Ol%C3%A1!%20Vi%20o%20modelo%20Solar%20Prime%20e%20quero%20um%20site%20personalizado%20para%20minha%20empresa.";
+const WHATSAPP = whatsappLink(
+  "Olá! Vi o modelo Solar Prime e quero um site personalizado para minha empresa.",
+);
 
 function AnimatedCounter() {
   const [value, setValue] = useState(0);

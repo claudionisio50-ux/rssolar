@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { LockKeyhole, Send } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
+import { whatsappLink } from "@/lib/whatsapp";
 
 const STATES = [
   { uf: "RJ", name: "Rio de Janeiro", irr: 5.0 },
@@ -47,7 +48,7 @@ export function Calculator() {
     };
   }, [bill, stateUf]);
 
-  const waLink = `https://wa.me/5521980234909?text=${encodeURIComponent(
+  const waLink = whatsappLink(
     [
       "Olá! Fiz uma simulação de energia solar pelo site.",
       `Nome: ${lead.name || "não informado"}`,
@@ -58,7 +59,7 @@ export function Calculator() {
       `Economia estimada: ${fmt(result.monthlySavings)} por mês.`,
       "Quero receber uma análise personalizada.",
     ].join("\n"),
-  )}`;
+  );
   const normalizedPhone = lead.phone.replace(/\D/g, "");
   const hasRequiredLeadData = lead.name.trim().length >= 2 && normalizedPhone.length >= 10;
 

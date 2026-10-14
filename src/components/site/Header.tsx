@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 import solarPrimeLogo from "@/assets/solar-prime-logo.webp";
+import { whatsappLink } from "@/lib/whatsapp";
 
-const WHATSAPP = "https://wa.me/5521980234909?text=Olá!%20Quero%20falar%20sobre%20energia%20solar.";
+const WHATSAPP = whatsappLink("Olá! Quero falar sobre energia solar.");
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
