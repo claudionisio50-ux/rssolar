@@ -236,3 +236,36 @@
   will-change: transform;
   animation: hero-kenburns 12s ease-in-out infinite alternate;
 }
+
+@keyframes hero-grid-move {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 48px 48px;
+  }
+}
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(245, 197, 24, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 197, 24, 0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+  animation: hero-grid-move 6s linear infinite;
+  mask-image: radial-gradient(ellipse 90% 80% at 50% 40%, black 30%, transparent 100%);
+}
+
+@keyframes hero-particle-float {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-26px);
+    opacity: 0.85;
+  }
+}
+.hero-particle {
+  box-shadow: 0 0 10px rgba(245, 197, 24, 0.8);
+  animation: hero-particle-float 7s ease-in-out infinite;
+}
