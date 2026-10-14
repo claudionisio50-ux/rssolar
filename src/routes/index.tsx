@@ -11,21 +11,22 @@ import { WhyUs } from "@/components/site/WhyUs";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { SectionDivider } from "@/components/site/SectionDivider";
+import { ShowcaseCta } from "@/components/site/ShowcaseCta";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "RJ Solar | Energia Solar em Cabo Frio e Região" },
+      { title: "Solar Prime | Modelo de site para empresas de energia solar" },
       {
         name: "description",
         content:
-          "Simule sua economia com energia solar e receba uma análise personalizada para sua casa, empresa ou propriedade rural em Cabo Frio e região.",
+          "Modelo demonstrativo de site profissional para empresas de energia solar, com calculadora, portfólio e atendimento pelo WhatsApp.",
       },
-      { property: "og:title", content: "RJ Solar | Simule sua economia" },
+      { property: "og:title", content: "Solar Prime | Modelo de site para energia solar" },
       {
         property: "og:description",
         content:
-          "Energia solar sob medida para o seu imóvel. Envie sua conta de luz e receba uma análise personalizada.",
+          "Um exemplo de site personalizado para apresentar serviços de energia solar e gerar contatos pelo WhatsApp.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -58,6 +59,8 @@ function Index() {
         <WhyUs />
         <SectionDivider />
         <Contact />
+        <SectionDivider />
+        <ShowcaseCta />
       </main>
       <Footer />
     </div>

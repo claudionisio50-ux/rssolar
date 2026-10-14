@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
-import { BrandMark } from "./BrandMark";
+import solarPrimeLogo from "@/assets/solar-prime-logo.webp";
 
 const WHATSAPP = "https://wa.me/5521980234909?text=Olá!%20Quero%20falar%20sobre%20energia%20solar.";
 
@@ -21,18 +21,12 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="#hero" className="group flex items-center gap-3" aria-label="RJ Solar - início">
-          <span className="transition-transform duration-300 group-hover:scale-105">
-            <BrandMark />
-          </span>
-          <span className="hidden sm:inline">
-            <span className="block font-display text-xl font-bold leading-none text-white md:text-2xl">
-              RJ Solar
-            </span>
-            <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.24em] text-[#f6c945]">
-              Energia solar
-            </span>
-          </span>
+        <a href="#hero" className="group flex items-center" aria-label="Solar Prime - início">
+          <img
+            src={solarPrimeLogo}
+            alt="Solar Prime — Energia Solar"
+            className="h-12 w-auto max-w-[190px] object-contain transition-transform duration-300 group-hover:scale-105 sm:h-14 sm:max-w-[230px]"
+          />
         </a>
         <a
           href={WHATSAPP}

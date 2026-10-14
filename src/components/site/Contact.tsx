@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
-import { FileText, MapPin, Phone } from "lucide-react";
+import { FileText, Palette, Phone } from "lucide-react";
 import { WhatsAppIcon } from "./WhatsAppIcon";
 
 const WHATSAPP =
   "https://wa.me/5521980234909?text=Olá!%20Quero%20enviar%20minha%20conta%20de%20luz%20para%20uma%20análise.";
-const MAPS =
-  "https://www.google.com/maps/search/?api=1&query=Rua+Brasil+710+Sao+Cristovao+Cabo+Frio+RJ";
 
 export function Contact() {
   return (
@@ -38,18 +36,9 @@ export function Contact() {
             <InfoCard icon={FileText} title="O que enviar">
               A última conta de luz e a cidade onde fica o imóvel.
             </InfoCard>
-            <InfoCard icon={MapPin} title="Atendimento">
-              Rua Brasil, 710
-              <br />
-              São Cristovão, Cabo Frio - RJ
-              <a
-                href={MAPS}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block mt-2 text-sky text-sm hover:underline"
-              >
-                Ver no Google Maps →
-              </a>
+            <InfoCard icon={Palette} title="Personalização">
+              Logo, cores, textos, serviços e área de atendimento adaptados à identidade da sua
+              empresa.
             </InfoCard>
             <InfoCard icon={Phone} title="WhatsApp">
               (21) 98023-4909

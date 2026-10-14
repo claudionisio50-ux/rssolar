@@ -110,7 +110,7 @@ export function Hero() {
             <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#F5C518]" />
           </span>
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#fde9a8]">
-            Cabo Frio e Região
+            Modelo demonstrativo
           </span>
         </motion.div>
 
@@ -131,8 +131,8 @@ export function Hero() {
           {...fadeUp(0.3)}
           className="text-base md:text-xl font-light text-white/85 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Simule sua economia, entenda o tamanho ideal do sistema e receba uma análise
-          personalizada pelo WhatsApp.
+          Simule sua economia, entenda o tamanho ideal do sistema e receba uma análise personalizada
+          pelo WhatsApp.
         </motion.p>
 
         {/* Botões */}
@@ -157,10 +157,7 @@ export function Hero() {
         </motion.div>
 
         {/* Badges */}
-        <motion.div
-          {...fadeUp(0.6)}
-          className="flex flex-wrap items-center justify-center gap-3"
-        >
+        <motion.div {...fadeUp(0.6)} className="flex flex-wrap items-center justify-center gap-3">
           {badges.map(({ icon: Icon, label }) => (
             <span
               key={label}

@@ -28,17 +28,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "RJ Solar | Energia Solar em Cabo Frio" },
+      { title: "Solar Prime | Modelo de site para energia solar" },
       {
         name: "description",
         content:
-          "Energia solar sob medida para casas, empresas e propriedades rurais em Cabo Frio e região.",
+          "Modelo demonstrativo de site profissional para empresas de energia solar, com calculadora, portfólio e atendimento pelo WhatsApp.",
       },
-      { name: "author", content: "RJ Solar" },
-      { property: "og:title", content: "RJ Solar | Simule sua economia" },
+      { name: "author", content: "Solar Prime" },
+      { property: "og:title", content: "Solar Prime | Modelo de site para energia solar" },
       {
         property: "og:description",
-        content: "Envie sua conta de luz e receba uma análise personalizada de energia solar.",
+        content:
+          "Um exemplo de site personalizado para apresentar serviços de energia solar e gerar contatos.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
