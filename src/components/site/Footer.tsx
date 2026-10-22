@@ -1,4 +1,4 @@
-import solarPrimeLogo from "@/assets/solar-prime-logo.webp";
+import solarPrimeLogo from "@/assets/solar-prime-logo.png.asset.json";
 
 export function Footer() {
   return (
