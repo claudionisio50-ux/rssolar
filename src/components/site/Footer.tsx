@@ -1,4 +1,4 @@
-import solarPrimeLogo from "@/assets/solar-prime-logo.webp";
+import solarPrimeLogo from "@/assets/solar-prime-logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -6,9 +6,11 @@ export function Footer() {
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <div className="flex items-center gap-3">
           <img
-            src={solarPrimeLogo}
+            src={solarPrimeLogo.url}
             alt="Solar Prime — Energia Solar"
-            className="h-12 w-auto max-w-[190px] object-contain"
+            width={1166}
+            height={370}
+            className="h-14 w-auto max-w-[230px] object-contain"
           />
         </div>
         <p>© {new Date().getFullYear()} Solar Prime — Modelo demonstrativo</p>
