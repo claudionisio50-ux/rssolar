@@ -303,11 +303,11 @@
 .solar-hero-badges svg { width: 14px; height: 14px; color: var(--hero-gold); flex-shrink: 0; }
 .solar-hero-footer { display: flex; align-items: end; justify-content: space-between; gap: 16px; }
 .solar-hero-scroll { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; text-transform: uppercase; color: var(--hero-ink); text-shadow: var(--hero-copy-shadow); }
-.solar-hero-savings { flex-shrink: 0; background: var(--hero-surface); border: 1px solid color-mix(in srgb, var(--hero-gold) 70%, transparent); border-radius: 8px; padding: 14px 18px; box-shadow: var(--hero-card-shadow); animation: solar-savings-pulse 4s ease-in-out infinite; font-size: 15px; font-weight: 700; }
+.solar-hero-savings { flex-shrink: 0; background: var(--hero-surface); border: 1px solid var(--hero-gold); border-radius: 8px; padding: 14px 18px; box-shadow: var(--hero-card-shadow); animation: solar-savings-pulse 4s ease-in-out infinite; font-size: 15px; font-weight: 700; }
 .solar-hero-savings strong { color: var(--hero-gold); font-size: 24px; }
 .solar-hero-savings p + p { font-size: 12px; margin-top: 2px; }
 @keyframes solar-dot-pulse { 50% { opacity: .45; } }
-@keyframes solar-savings-pulse { 50% { box-shadow: var(--hero-pulse-shadow); border-color: var(--hero-gold); } }
+@keyframes solar-savings-pulse { 50% { box-shadow: var(--hero-pulse-shadow); } }
 @media (min-width: 768px) {
   .solar-hero { min-height: 600px; }
   .solar-hero-title { font-size: 3.5rem; }
