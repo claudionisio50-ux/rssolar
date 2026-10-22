@@ -24,9 +24,11 @@ export function Header() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a href="#hero" className="group flex items-center" aria-label="Solar Prime - início">
           <img
-            src={solarPrimeLogo}
+            src={solarPrimeLogo.url}
             alt="Solar Prime — Energia Solar"
-            className="h-12 w-auto max-w-[190px] object-contain transition-transform duration-300 group-hover:scale-105 sm:h-14 sm:max-w-[230px]"
+            width={1166}
+            height={370}
+            className="h-11 w-auto max-w-[180px] object-contain drop-shadow-[0_2px_10px_rgba(245,197,24,0.25)] transition-transform duration-300 group-hover:scale-105 sm:h-14 sm:max-w-[240px]"
           />
         </a>
         <a
